@@ -1,5 +1,5 @@
 // Package nanlib provides a set of utilities for working with databases using the nanlib library.
-package nanlib
+package nansql
 
 import (
 	"context"

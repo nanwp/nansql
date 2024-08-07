@@ -35,20 +35,11 @@ import (
     _ "github.com/lib/pq"
 )
 
-type DatabaseConfig struct {
-    Driver              string
-    DSN                 string
-    MaxIdleConnections  int
-    MaxOpenConnections  int
-    MaxIdleDuration     time.Duration
-    MaxLifeTimeDuration time.Duration
-}
-
 func main() {
-    cfg := DatabaseConfig{
-        Driver:             "postgres",
-        DSN:                "your-dsn",
-        MaxIdleConnections: 10,
+    cfg := nansql.DatabaseConfig{
+        Driver:             "postgres", // you database driver dont forget to install driver postgre github.com/lib/pq
+        DSN:                "your-dsn", // "postgres://nanda:nanda@localhost:5432/test?sslmode=disable"
+        MaxIdleConnections: 10, 
         MaxOpenConnections: 100,
         MaxIdleDuration:    5 * time.Minute,
         MaxLifeTimeDuration: 1 * time.Hour,

@@ -1,4 +1,4 @@
-package nanlib
+package nansql
 
 import (
 	"log"
