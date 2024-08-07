@@ -1,6 +1,6 @@
 # nansql
 
-`nansql` is a Golang library designed for managing connections to a SQL Server database using the `sqlx` package. It provides a simple and efficient way to handle database connections, execute queries, and manage transactions.
+`nansql` is a Golang library designed for managing connections to a database using the `sqlx` package. It provides a simple and efficient way to handle database connections, execute queries, and manage transactions.
 
 ## Features
 
